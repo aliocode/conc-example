@@ -34,12 +34,12 @@ ok      github.com/aliocode/conc-example        6.286s
 ```
 Overall, the `BenchmarkWithBuiltinWgNoPanics` and `BenchmarkWithBuiltinWgRecovered` functions performed better in terms of time and memory usage. 
 
-The performance diff in percentage for the `BenchmarkWithBuiltinWgNoPanics` function compared to `BenchmarkWithConcWgNoPanics` is 
-- 24.64% for time
-- 3.2% for memory
-- 21.74% for allocations
+The performance diff in percentage for the `BenchmarkWithBuiltinWgNoPanics` function compared to `BenchmarkWithConcWgNoPanics`
+- ns/op: 3.92% faster in BenchmarkWithBuiltinWgNoPanics
+- B/op: 3.16% less memory usage in BenchmarkWithBuiltinWgNoPanics
+- allocs/op: 20.02% less allocations in BenchmarkWithBuiltinWgNoPanics
 
-The performance diff in percentage for the `BenchmarkWithBuiltinWgRecovered` function compared to `BenchmarkWithConcWgRecovered` is 
-- 14.45% for time
-- 9.81% for memory
-- 0.04% for allocations
+The performance diff in percentage for the `BenchmarkWithBuiltinWgRecovered` function compared to `BenchmarkWithConcWgRecovered`
+- ns/op: 92.24% faster in BenchmarkWithBuiltinWgRecovered
+- B/op: 88.94% less memory usage in BenchmarkWithBuiltinWgRecovered
+- allocs/op: 44.28% less allocations in BenchmarkWithBuiltinWgRecovered
